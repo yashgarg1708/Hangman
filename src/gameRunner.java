@@ -41,7 +41,8 @@ public class gameRunner {
 
             if (guesses == 6) {
                 drawFigure.figureDisplay(6);
-                System.out.println("************** YOU LOSE!! *****************");
+                System.out.println("************** YOU LOSE!! THE WORD WAS " + word + " *****************");
+
                 break;
             }
             if (!wordList.contains('_')) {
