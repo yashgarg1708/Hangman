@@ -1,44 +1,29 @@
-# Hangman
-A simple Hangman game in JAVA.
+# Hangman - A Simple Java Game
 
-Features
-Extensive Word List: A Dictionary.java class contains 100 unique words, each with an associated clue.
+## Overview
+Hangman is a simple console-based word guessing game implemented in Java. The game randomly selects a word from an extensive dictionary and challenges the player to guess it one letter at a time. Incorrect guesses progressively draw the hangman figure until the player either wins or loses.
 
-Random Selection: The game randomly selects a word and clue from the dictionary for each new round.
+---
 
-Console-Based: All gameplay is handled directly in the command line interface.
+## Features
 
-How to Run
-To run this project, you need to have the Java Development Kit (JDK) installed on your system.
+- **Extensive Word List**: The `Dictionary.java` class contains 100 unique words, each with an associated clue.  
+- **Random Selection**: Each round randomly selects a word and its clue from the dictionary.  
+- **Console-Based Gameplay**: Play directly in your terminal or command prompt.  
+- **Hangman Visuals**: ASCII art represents the Hangman figure as incorrect guesses accumulate.  
 
-Save the files: Ensure that both Main.java and Dictionary.java are in the same directory.
+---
 
-Compile the code: Open your terminal or command prompt, navigate to the directory where you saved the files, and compile them using the Java compiler.
+## How to Run
 
-javac Main.java Dictionary.java
+### Prerequisites
+- Java Development Kit (JDK) installed on your system.  
 
-Run the game: After a successful compilation, run the main class.
+### Steps
+1. Save the source files: Ensure `Main.java`, `Dictionary.java`, and any other classes (`gameRunner.java`, `drawFigure.java`) are in the same directory.  
 
-java Main
+2. Open your terminal and navigate to the directory containing the files.  
 
-Current State
-The current version of the code is set up as a foundation for the full game. It successfully starts a new game loop, selects a random word and clue from the Dictionary class, and displays them. The game loop will continue until you press 'Q' to quit.
-
-Next Steps
-To make this a fully functional game, you can add the following features:
-
-Game Logic: Implement a gameRunner class or add the logic to the Main class to handle the core gameplay. This would include:
-
-Displaying a hidden word (e.g., _ _ _ _).
-
-Taking letter guesses from the user.
-
-Checking if the guessed letter is in the word.
-
-Tracking the number of incorrect guesses and updating the Hangman visual.
-
-Ending the game when the word is guessed or the user runs out of guesses.
-
-Visuals: Add ASCII art to represent the Hangman figure as the user makes incorrect guesses.
-
-Feel free to expand on this project and add new features to make it your own!
+3. Compile the project:
+```bash
+javac Main.java Dictionary.java gameRunner.java drawFigure.java
